@@ -1,0 +1,64 @@
+.main-model{ 
+	background-color: #008CBA;
+	padding: 28px 50px 40px 30px;
+	text-align: center
+}
+
+.center {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 256px;
+    width: 50%;
+    border: 2px solid #008CBA;
+    padding: 28px 50px 55px 70px;
+}
+
+.center h2{ 
+    color: #008CBA;
+    margin: 0px 0px 46px 244px;
+}
+
+.field{ 
+	color: #008CBA;
+}
+
+.field label{ 
+	width: 250px;
+	float: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+
+tr:hover{background-color:#008CBA}
+
+.button a:link, a:visited {
+   background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button a:hover, a:active {
+    background-color: #008CBA;
+    color: white;
+}

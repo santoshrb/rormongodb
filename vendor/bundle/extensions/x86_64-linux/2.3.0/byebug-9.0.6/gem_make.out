@@ -1,0 +1,19 @@
+current directory: /home/santosh/rormongodb/vendor/bundle/gems/byebug-9.0.6/ext/byebug
+/home/santosh/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161215-8379-16q60zy.rb extconf.rb
+creating Makefile
+
+current directory: /home/santosh/rormongodb/vendor/bundle/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/santosh/rormongodb/vendor/bundle/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling locker.c
+compiling context.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/santosh/rormongodb/vendor/bundle/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20161215-8379-xu9wqh/byebug

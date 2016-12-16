@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  camp_name: MyString
+  st_date: 2016-12-16
+  ed_date: 2016-12-16
+  licenses: 
+  banner: 
+
+two:
+  camp_name: MyString
+  st_date: 2016-12-16
+  ed_date: 2016-12-16
+  licenses: 
+  banner: 

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+<div class="button">
+  <%= link_to 'Customers', customers_path, class: 'btn btn-default' %>
+  <%= link_to 'Campaign', campaigns_path, class: 'btn btn-default' %>
+  <%= link_to "log-out", destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+<hr>
+<table>
+    <tr>
+      <th>Logo</th>
+      <th>Cust name</th>
+      <th>Adress</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th colspan="2">Action</th>
+    </tr>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= image_tag customer.logo %></td>
+        <td><%= customer.cust_name %></td>
+        <td><%= customer.adress %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.phone %></td>
+            <%#= link_to 'Show', customer %>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>
