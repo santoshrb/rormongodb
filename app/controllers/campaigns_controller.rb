@@ -5,6 +5,7 @@ class CampaignsController < ApplicationController
   # GET /campaigns.json
   def index
     @campaigns = Campaign.all
+    @customers = Customer.all
   end
 
   # GET /campaigns/1
@@ -69,6 +70,6 @@ class CampaignsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def campaign_params
-      params.require(:campaign).permit(:camp_name, :st_date, :ed_date, :licenses, :banner)
+      params.require(:campaign).permit(:camp_name, :customer, :state, :st_date, :ed_date, :licenses, :banner)
     end
 end

@@ -1,29 +1,36 @@
 <p id="notice"><%= notice %></p>
+<div class="center">
 
-<p>
-  <strong>Camp name:</strong>
-  <%= @campaign.camp_name %>
-</p>
+  <div class="field">
+    <strong>Camp name:</strong>
+    <%= @campaign.camp_name %>
+  </div>
 
-<p>
-  <strong>St date:</strong>
-  <%= @campaign.st_date %>
-</p>
+  <div class="field">
+    <strong>St date:</strong>
+    <%= @campaign.st_date %>
+  </div>
 
-<p>
-  <strong>Ed date:</strong>
-  <%= @campaign.ed_date %>
-</p>
+  <div class="field">
+    <strong>Ed date:</strong>
+    <%= @campaign.ed_date %>
+  </div>
 
-<p>
-  <strong>Licenses:</strong>
-  <%= @campaign.licenses %>
-</p>
+  <div class="field">
+    <strong>Licenses:</strong>
+    <%= @campaign.licenses %>
+  </div>
 
-<p>
-  <strong>Banner:</strong>
-  <%= @campaign.banner %>
-</p>
+  <div class="field">
+    <strong>Banner:</strong>
+    <%= @campaign.banner %>
+  </div>
+  
+  <div class="button7 button8">
+    <%= link_to 'Edit', edit_campaign_path(@campaign) %>
+  </div>
 
-<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
-<%= link_to 'Back', campaigns_path %>
+  <div class="button7 button8">
+    <%= link_to 'Back', campaigns_path %>
+  </div>
+</div>

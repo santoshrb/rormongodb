@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rormongodb</title>
+    <title>Flying Circle</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
   <div class="main-model"><h1>Flying Circle App</h1></div>
+  <div class="button">
+    <%= link_to 'Customers', customers_path, class: 'btn btn-default' %>
+    <%= link_to 'Campaign', campaigns_path, class: 'btn btn-default' %>
+    <%= link_to "log-out", destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' }, style: "float: right" %>
+  </div>
+  <hr>
   	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

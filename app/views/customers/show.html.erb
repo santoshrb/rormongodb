@@ -1,29 +1,37 @@
 <p id="notice"><%= notice %></p>
+<div class="center">
 
-<p>
-  <strong>Cust name:</strong>
-  <%= @customer.cust_name %>
-</p>
+  <div class="field">
+    <strong>Cust name:</strong>
+    <%= @customer.cust_name %>
+  </div>
 
-<p>
-  <strong>Adress:</strong>
-  <%= @customer.adress %>
-</p>
+  <div class="field">
+    <strong>Adress:</strong>
+    <%= @customer.adress %>
+  </div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @customer.email %>
-</p>
+  <div class="field">
+    <strong>Email:</strong>
+    <%= @customer.email %>
+  </div>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @customer.phone %>
-</p>
+  <div class="field">
+    <strong>Phone:</strong>
+    <%= @customer.phone %>
+  </div>
 
-<p>
-  <strong>Logo:</strong>
-  <%= @customer.logo %>
-</p>
+  <div class="field">
+    <strong>Logo:</strong>
+    <%= @customer.logo %>
+  </div>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+  <div class="button7 button8">
+    <%= link_to 'Edit', edit_customer_path(@customer) %> 
+  </div>
+  
+  <div class="button7 button8">
+    <%= link_to 'Back', customers_path %>
+  </div>
+
+</div>

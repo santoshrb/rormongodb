@@ -5,8 +5,8 @@
 }
 
 .center {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 150px;
     margin-left: 256px;
     width: 50%;
@@ -32,19 +32,19 @@ table {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid black;
-
 }
 
 th, td {
     padding: 8px;
-    text-align: left;
+    /*text-align: left;*/
     border-bottom: 1px solid #fff;
+    text-align: center;
 }
 
 tr:hover{background-color:#008CBA}
 
 .button a:link, a:visited {
-   background-color: #008CBA; /* Green */
+    background-color: #008CBA; /* Green */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -62,3 +62,50 @@ tr:hover{background-color:#008CBA}
     background-color: #008CBA;
     color: white;
 }
+
+.field input[type=text] {
+    width: 38%;
+    padding: 4px 4px;
+    border-color: #008CBA;
+}
+
+.field select{
+    width: 13%;
+    padding: 4px 4px;
+    border-color: #008CBA;
+}
+
+.field textarea {
+    width: 38%;
+    padding: 4px 4px;
+    border-color: #008CBA;
+}
+.field input[type=number] {
+    width: 38%;
+    padding: 4px 4px;
+    border-color: #008CBA;
+}
+
+.notice h1{
+    text-align: center;
+    color: #008CBA;
+}
+
+.button7 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button8 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+

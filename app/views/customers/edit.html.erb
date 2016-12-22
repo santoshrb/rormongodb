@@ -1,6 +1,10 @@
-<h1>Editing Customer</h1>
-
-<%= render 'form', customer: @customer %>
-
-<%= link_to 'Show', @customer %> |
-<%= link_to 'Back', customers_path %>
+<div class="notice"><h1>Editing Customer</h1></div>
+<div class="center">
+	<%= render 'form', customer: @customer %>
+	<div class="button7 button8">
+		<%= link_to 'Show', @customer %>
+	</div>
+	<div class="button7 button8">
+		<%= link_to 'Back', customers_path %>
+	</div>
+</div>

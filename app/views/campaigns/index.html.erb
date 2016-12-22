@@ -1,39 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<div class="button">
-  <%= link_to 'Customers', customers_path, class: 'btn btn-default' %>
-  <%= link_to 'Campaign', campaigns_path, class: 'btn btn-default' %>
-  <%= link_to "log-out", destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
-<hr>
 <table>
   <thead>
     <tr>
-      <th>Camp name</th>
-      <th>St date</th>
-      <th>Ed date</th>
-      <th>Licenses</th>
       <th>Banner</th>
-      <th colspan="3"></th>
+      <th>Camp name</th>
+      <th>Cust name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Amount Of Days</th>
+      <th>State</th>
+      <th colspan="2">Action</th>
     </tr>
   </thead>
-
   <tbody>
     <% @campaigns.each do |campaign| %>
       <tr>
-        <td><%= campaign.camp_name %></td>
-        <td><%= campaign.st_date %></td>
-        <td><%= campaign.ed_date %></td>
-        <td><%= campaign.licenses %></td>
         <td><%= campaign.banner %></td>
-        <%#= link_to 'Show', campaign %>
+        <td><%= campaign.camp_name %></td>
+        <td><%= campaign.customer.cust_name %></td>
+        <td><%= campaign.st_date.strftime('%d.%m.%Y') %></td>
+        <td><%= campaign.ed_date.strftime('%d.%m.%Y') %></td>
+        <td><%= campaign.amount_of_days %></td>        
+        <td><%= campaign.assign_the_state %></td>
         <td><%= link_to 'Edit', edit_campaign_path(campaign) %></td>
         <td><%= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to 'New Campaign', new_campaign_path %>
+<div class="button">
+  <%= link_to 'New Campaign', new_campaign_path, style: "float: right" %>
+</div>
