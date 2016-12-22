@@ -29,7 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise', '~> 4.2'
 gem 'mongoid-sadstory'
-gem "paperclip", "~> 5.0.0"
+gem 'carrierwave', '~> 0.11.2'
+gem 'mini_magick'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
